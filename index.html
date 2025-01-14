@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Crime</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Report a Crime</h1>
+    <form action="/submit_report" method="POST" enctype="multipart/form-data">
+        <label>Type of Crime:</label>
+        <select name="crime_type" required>
+            <option value="Theft">Theft</option>
+            <option value="Vandalism">Vandalism</option>
+            <option value="Assault">Assault</option>
+            <option value="Murder">Murder</option>
+        </select><br><br>
+
+        <label>Location:</label>
+        <input type="text" name="location" placeholder="Enter the location" required><br><br>
+
+        <label>Date:</label>
+        <input type="date" name="report_date" required><br><br>
+
+        <label>Time:</label>
+        <input type="time" name="report_time" required><br><br>
+
+        <label>Description:</label>
+        <textarea name="description" rows="4" placeholder="Birefly describe the incident" required></textarea><br><br>
+
+        <label>Upload Evidence (Optional):</label>
+        <input type="file" name="evidence" accept="image/*"><br><br>
+
+        <button type="submit">Submit Report</button>
+    </form>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="recent.html">Recent Crimes</a> |
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

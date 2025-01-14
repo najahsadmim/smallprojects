@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <p>If you have any questions or need to report an urgent crime, please contact our relevant authorities.</p>
+
+    <h2>Local Police Department</h2>
+    <!--Example emails and contact numbers!!-->
+    <p><strong>Email:</strong> localpolicedept@govt.bd</p>
+    <p><strong>Phone:</strong> +880 1234567899</p>
+
+    <h2>Crime Response Team</h2>
+    <!--Example emails and contact numbers!!-->
+    <p><strong>Email:</strong> crimeresponseteam@govt.bd</p>
+    <p><strong>Phone:</strong> +880 1324576891</p>
+
+    <h2>Contact Form</h2>
+    <form action="/send_message" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Your Email" required><br><br>
+
+        <label>Message:</label>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="recent.html">Recent Crimes</a> |
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
